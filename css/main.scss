@@ -4,8 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-h1,h2,h3{
-    margin-top: 0;
+h1,
+h2,
+h3 {
+  margin-top: 0;
 }
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -21,17 +23,16 @@ body {
 .img__responsive {
   width: 100%;
   height: auto;
-  
 }
 
-.card__box{
-    display: none;
+.card__box {
+  display: none;
 }
 .card {
-   /*  overflow: hidden; */
+  /*  overflow: hidden; */
   max-width: 56rem;
   border-radius: 2rem;
-  background-image: url('../images/bg-pattern-mobile.svg');
+  background-image: url("../images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-color: #fff;
   background-position: center 0%;
@@ -39,100 +40,96 @@ body {
   padding: 1.5rem 2.875rem;
 }
 .card__img {
-    position: relative;
-  }
-.card__img img{
-    max-width: 15rem;
-    margin: auto;
-    display: block;
-    position: absolute;
-    top: -6.7rem;
-    left: 50%;
-    transform: translateX(-50%);
+  position: relative;
+}
+.card__img img {
+  max-width: 15rem;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: -6.7rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .card__content {
-    padding-top: 7rem;
+  padding-top: 7rem;
 }
-.accordian__item{
-    padding-top: 1rem;
-    border-bottom: 1px solid hsl(240, 5%, 91%);
+.accordian__item {
+  padding-top: 1rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
 }
-.accordian__item h2{
-    margin-bottom: 0;
-
+.accordian__item h2 {
+  margin-bottom: 0;
 }
-.question{
-    padding: 0;
-    border: none;
-    background: transparent;
-    font-family: inherit;
-    font-size: 0.875rem;
-    color: hsl(237, 12%, 33%);
-    margin-bottom: 1rem;
-    display: block;
-    width: 100%;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.question {
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: hsl(237, 12%, 33%);
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.question::after{
-    content: '';
-    background-image: url('../images/icon-arrow-down.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    width: 0.625rem;
-    display: block;
-    height: 1rem;
-    transition: transform .3s ease-in-out;
+.question::after {
+  content: "";
+  background-image: url("../images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 0.625rem;
+  display: block;
+  height: 1rem;
+  transition: transform 0.3s ease-in-out;
 }
-.question__hover:hover{
+.question__hover:hover {
   color: hsl(14, 88%, 65%);
 }
 .question.rotate::after {
-  transform: rotateY('90deg');
+  transform: rotateY("90deg");
 }
-.accordian__colapse{
+.accordian__colapse {
   display: none;
-  transition: display  0.5s ease;
+  transition: display 0.5s ease;
 }
-.accordian__content{
-font-size: 0.75rem;
-line-height: 1.4;
-margin-bottom: 1rem;
+.accordian__content {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
-//functionality classes 
+//functionality classes
 //when open the font weight of question
-.open{
-    font-weight: 700;
+.open {
+  font-weight: 700;
 }
-.question.open::after{
+.question.open::after {
   transform: rotate(180deg);
 }
 //when closed hide the answer e.g content
-.accordian__colapse.collapse{
-    display: block;
-    transition:height 5s ease ;
+.accordian__colapse.collapse {
+  display: block;
+  transition: height 5s ease;
 }
-.collasping{
+.collasping {
   height: 0;
   overflow: hidden;
-  
-
 }
 
 @media (min-width: 900px) {
-    body{
-        padding: 5rem;
-    }
+  body {
+    padding: 5rem;
+  }
   .card {
-    
     display: flex;
     margin: 0 auto;
     position: relative;
-    background-image: url('../images/bg-pattern-desktop.svg');
-    
+    background-image: url("../images/bg-pattern-desktop.svg");
+
     padding: 4.375rem 6.25rem 4.375rem 0;
     background-size: 45%;
     background-repeat: no-repeat;
@@ -143,20 +140,19 @@ margin-bottom: 1rem;
     flex: 1;
     display: flex;
     align-items: center;
-   overflow: hidden;
+    overflow: hidden;
   }
-  .card__img img{
+  .card__img img {
     transform: translateX(-4rem);
     max-width: 400px;
     position: static;
   }
   .card__content {
     flex: 1;
-   /*  padding-right: 2rem; */
-        padding-top: 0;
-    
+    /*  padding-right: 2rem; */
+    padding-top: 0;
   }
-  .card__box{
+  .card__box {
     display: block;
     position: absolute;
     left: 0;
